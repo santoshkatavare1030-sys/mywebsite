@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption & Care | Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #4CAF50;
+        }
+
+        .company-name {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .cta-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* General Section Styling */
+        section {
+            padding: 80px 5%;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .contact-card h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo-container">
+            <!-- Replace the image link below with your own photo URL -->
+            <img src="https://unsplash.com" alt="Company Logo" class="company-logo">
+            <span class="company-name">Paws & Care</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <section id="home" class="hero">
+        <h1>Find Your Furry Best Friend</h1>
+        <p>We are dedicated to rescuing, rehabilitating, and finding loving forever homes for pets in need. Explore our care services too!</p>
+        <a href="#contact" class="cta-btn">Adopt Today</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Our Company</h2>
+        <p>Founded with a deep love for animals, Paws & Care has been rescuing and rehoming pets since 2020. Our mission is to provide top-tier adoption services, health checkups, and behavioral training to ensure every pet transitions smoothly into their new loving family. We believe every animal deserves a second chance.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Have questions about adopting or our care services? Reach out to us!</p>
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Location</h3>
+                <p>123 Pet Lovers Lane</p>
+                <p>New York, NY 10001</p>
+            </div>
+            <div class="contact-card">
+                <h3>Call Us</h3>
+                <p>+1 (555) 123-4567</p>
+                <p>Mon - Sat, 9am - 6pm</p>
+            </div>
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p>contact@pawsandcare.com</p>
+                <p>support@pawsandcare.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Paws & Care. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
